@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <style>
+        /* Решение 1
+         .ad1 {
+			width: 400px;
+			height: 100px;
+			background-color: #60B88D;
+			position: relative;
+			margin: 20px;
+		}
+		.ad1::before {
+			content: '';
+			width: 400px;
+			height: 100px;
+			background-color: #90CDAF;
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			z-index: -1;
+		}
+		.ad1::after {
+			content: '';
+			width: 400px;
+			height: 100px;
+			background-color: #BFE3D1;
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			z-index: -2;
+		} */
+        /* Решение 2 */
+        .ad1 {
+			width: 400px;
+			height: 100px;
+			background-color: #60B88D;
+			box-shadow: 10px 10px 0 0 #90CDAF, 20px 20px 0 0 #BFE3D1;
+        }
+    	/*  Решение 3
+        div {
+			width: 400px;
+			height: 100px;
+		}
+		.ad1 {
+			position: relative;
+			background-color: #BFE3D1;
+			margin: 40px;
+		}
+		.ad2 {
+			position: absolute;
+			background-color: #90CDAF;
+			top: -10px;
+			left: -10px;
+		}
+		.ad3 {
+			position: absolute;
+			background-color: #60B88D;
+			top: -10px;
+			left: -10px;
+		} */
+    </style>
+</head>
+<body>
+    <div class="ad1">
+        <div class="ad2">
+            <div class="ad3"></div>
+        </div>
+    </div> 
+</body>
+</html>
