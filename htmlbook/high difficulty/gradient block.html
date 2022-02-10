@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient block</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-image: url(http://static.tumblr.com/6a9717d184f53eb4874cb57e9ffea254/bzgmagn/jJNn9yge9/tumblr_static_7ktc5e7n65c08ksk48c4cc0k8_2048_v2.jpg)
+        }
+        .container {
+            border: 2px solid darkblue;
+            border-radius: 5px;
+            margin: 20px;
+            background-image: linear-gradient(rgba(40, 140, 255, 0.7), rgba(40, 100, 200, 0.7))
+        }
+        .content {
+            border: 1px solid gray;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        h2 {
+            background-image: linear-gradient(yellow, gold);
+            margin: 0;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            font-size: 20px;
+        }
+        p {
+            background-color: white;
+            margin: 0;
+            padding: 10px;
+            border-radius: 0 0 5px 5px;
+            height: 50px;
+        }
+        h2::before {
+            content: "";
+            position: absolute;
+            top: 105px;
+            border-top: 100px solid gold;
+            border-left: 100px solid white;
+            border-right: 10px solid white;
+
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+          <h2>Header</h2>
+          <p>Content</p>
+      </div>
+    </div>
+  </body>
+</html>
