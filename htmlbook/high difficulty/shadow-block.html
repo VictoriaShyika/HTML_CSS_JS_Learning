@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow block</title>
+    <style>
+        div {
+            width: max-content;
+            margin: 50px auto;
+        }
+
+        h3, p {
+            background: #C9E39C;
+            margin: 0;
+            padding: 5px 10px 5px 10px;
+            box-shadow: 0 0 3px 1px #C9C9C9;
+            position: relative;
+            border-top-right-radius: 4px;
+        }
+        p {
+            max-width: 250px;
+            border: 1px solid #A3D869;
+            z-index: -1;
+            top: 0;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+        h3 {
+            width: max-content;
+            border: 1px solid #A3D869;
+            border-bottom: none;
+            border-top-left-radius: 4px;
+            position: relative;
+            border-bottom: no;
+        }
+        h3:before {
+            width: 100%;
+            content: "";
+            height: 10px;
+            background: #C9E39C;
+            position: absolute;
+            top: 25px;
+            left: 0;
+            z-index: 10;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Header</h3>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores porro
+            recusandae veritatis voluptate. At excepturi harum hic ipsum iusto labore, molestiae nihil
+            odio officiis perferendis qui sapiente tempora velit!</span></p>
+    </div>    
+</body>
+</html>
