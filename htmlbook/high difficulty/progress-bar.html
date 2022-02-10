@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress bar</title>
+    <style>
+        #progress {
+            width: 250px;
+            border: 1px solid #333;
+            position: relative;
+            background: #fff;
+        }
+        #progress .bg {
+            background-color: #f2f0e3;
+            position: absolute;
+            height: 100%;
+            width: 50%;
+        }
+        #progress .begin, #progress .end {
+            position: absolute;
+            font-size: 0.9em;
+            top: 1px;
+        }
+        #progress .begin {
+            padding-left: 3px;
+        }
+        #progress .end {
+            right: 0;
+            padding-right: 3px;
+        }
+        #progress .current { 
+            position: relative;
+            text-align: center;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div id="progress">
+      <div class="bg"></div>
+      <span class="begin">0</span>
+      <span class="end">5</span>
+      <div class="current">50%</div>
+    </div>
+  </body>
+</html>
