@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box-top,
+      .box,
+      .box-bottom {
+        margin: auto;
+        display: block;
+        width: 70%;
+      }
+      .box-top,
+      .box-bottom {
+        height: 15px;
+        border-left: 1px solid #909090;
+        border-right: 1px solid #909090;
+      }
+      .box {
+        height: 50px;
+        background: #f0f0f0;
+        border: 1px solid #909090;
+        position: relative;
+      }
+      .box:before,
+      .box:after {
+        content: "";
+        border-top: 1px solid #909090;
+        border-bottom: 1px solid #909090;
+        width: 16px;
+        height: 50px;
+        position: absolute;
+        top: -1px;
+      }
+      .box:before {
+        left: -16px;
+      }
+      .box:after {
+        right: -16px;
+      }
+      span {
+        margin-left: 15px;
+        line-height: 47px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-top"></div>
+    <div class="box"><span>Рабочий эскиз</span></div>
+    <div class="box-bottom"></div>
+    <div class="left-right-border"></div>
+  </body>
+</html>

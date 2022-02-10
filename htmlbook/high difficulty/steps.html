@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steps</title>
+    <style>
+      .wrapper {
+        margin: 40px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      }
+
+      .steps * {
+        display: inline-block;
+        margin-left: -7px;
+        padding: 5px 20px;
+        background: linear-gradient(
+          to bottom,
+          #dedede 0%,
+          #bfbfbf 50%,
+          #dedede 100%
+        );
+        clip-path: polygon(93% 0, 100% 50%, 93% 100%, 0% 100%, 7% 50%, 0% 0%);
+      }
+
+      .steps *:first-child {
+        clip-path: polygon(93% 0, 100% 50%, 93% 100%, 0% 100%, 0% 0%);
+      }
+
+      .steps *:last-child {
+        clip-path: polygon(100% 0, 100% 100%, 0% 100%, 7% 50%, 0% 0%);
+      }
+
+      .step_active {
+        color: #ffffff;
+        background: linear-gradient(
+          to bottom,
+          #aee188 0%,
+          #66c620 50%,
+          #aee188 100%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="steps">
+        <div class="step1">Шаг 1</div>
+        <div class="step2 step_active">Шаг 2</div>
+        <div class="step3">Шаг 3</div>
+        <div class="step4">Шаг 4</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+    <!-- <script src="https://drive.google.com/uc?export=download&id=0BziKaF39HOaEalV2LTRFUl95VWs"></script> -->
+    <!-- <script src="https://drive.google.com/uc?export=download&id=0BziKaF39HOaEMi1jVkp3VHFtTlk"></script> -->
+    <link
+      rel="stylesheet"
+      href="./form.css"
+    />
+    <script>
+      $(document).ready(function () {
+        $("select").selecter();
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      <fieldset class="container description">
+        <legend class="round">Описание</legend>
+        <div class="general_description">
+          <p>
+            <label for="coctail_name">Название коктейля</label>
+            <input type="text" name="coctail_name" id="coctail_name" required />
+          </p>
+          <p>
+            <label for="alternative_name"
+              >Альтернативные названия (через запятую):</label
+            >
+            <input type="text" name="alternative_name" id="alternative_name" />
+          </p>
+          <p>
+            <label for="short_description">Краткое описание</label>
+            <textarea
+              name="short_description"
+              id="short_description"
+              rows="10"
+              cols="34"
+            ></textarea>
+          </p>
+          <p>
+            <label for="instraction">Инструкция для приготовления</label>
+            <textarea
+              name="instraction"
+              id="instraction"
+              rows="10"
+              cols="34"
+            ></textarea>
+          </p>
+        </div>
+        <!-- end general_description-->
+        <div class="visual"></div>
+      </fieldset>
+      <!--end description-->
+      <div class="two_blocks_inside">
+        <fieldset class="container ingredients">
+          <legend class="round">Ингредиенты</legend>
+          <ul>
+            <li id="ingredient-1" class="ingredient_container">
+              <div class="wrapper">
+                <label class="caption">Название:</label>
+
+                <select name="basis-1" id="selectBasis-1"></select>
+              </div>
+              <div class="wrapper">
+                <label class="caption">Кол-во:</label>
+                <input type="text" name="count-1" placeholder="-" />
+              </div>
+              <div class="wrapper">
+                <label class="caption">Единица:</label>
+                <select name="unit-1">
+                  <option value="0">-</option>
+                  <option value="glass">Стакан</option>
+                  <option value="ml">мл.</option>
+                  <option value="l">л.</option>
+                </select>
+              </div>
+              <div class="wrapper">
+                <label class="caption">Украшение:</label>
+                <label class="switch"
+                  ><input type="checkbox" name="decor-1" /><span
+                    class="switch"
+                  ></span
+                ></label>
+              </div>
+            </li>
+            <li id="ingredient-2" class="ingredient_container">
+              <select name="basis-2" id="selectBasis-2"></select>
+              <input type="text" name="count-2" placeholder="-" />
+              <select name="unit-2">
+                <option value="0">-</option>
+                <option value="glass">Стакан</option>
+                <option value="ml">мл.</option>
+                <option value="l">л.</option>
+              </select>
+              <label class="switch"
+                ><input type="checkbox" name="decor-2" /><span
+                  class="switch"
+                ></span
+              ></label>
+            </li>
+            <li id="ingredient-3" class="ingredient_container">
+              <select name="basis-3" id="selectBasis-3"></select>
+              <input type="text" name="count-3" placeholder="-" />
+              <select name="unit-3">
+                <option value="0">-</option>
+                <option value="glass">Стакан</option>
+                <option value="ml">мл.</option>
+                <option value="l">л.</option>
+              </select>
+              <label class="switch"
+                ><input type="checkbox" name="decor-3" /><span
+                  class="switch"
+                ></span
+              ></label>
+            </li>
+            <li id="ingredient-4" class="ingredient_container">
+              <select name="basis-4" id="selectBasis-4"></select>
+              <input type="text" name="count-4" placeholder="-" />
+              <select name="unit-4">
+                <option value="0">-</option>
+                <option value="glass">Стакан</option>
+                <option value="ml">мл.</option>
+                <option value="l">л.</option>
+              </select>
+              <label class="switch"
+                ><input type="checkbox" name="decor-4" /><span
+                  class="switch"
+                ></span
+              ></label>
+            </li>
+            <li id="ingredient-5" class="ingredient_container">
+              <select name="basis-5" id="selectBasis-5"></select>
+              <input type="text" name="count-5" placeholder="-" />
+              <select name="unit-5">
+                <option value="0">-</option>
+                <option value="glass">Стакан</option>
+                <option value="ml">мл.</option>
+                <option value="l">л.</option>
+              </select>
+              <label class="switch"
+                ><input type="checkbox" name="decor-5" /><span
+                  class="switch"
+                ></span
+              ></label>
+            </li>
+            <li id="ingredient-6" class="ingredient_container">
+              <select name="basis-6" id="selectBasis-6"></select>
+              <input type="text" name="count-6" placeholder="-" />
+              <select name="unit-6">
+                <option value="0">-</option>
+                <option value="glass">Стакан</option>
+                <option value="ml">мл.</option>
+                <option value="l">л.</option>
+              </select>
+              <label class="switch"
+                ><input type="checkbox" name="decor-6" /><span
+                  class="switch"
+                ></span
+              ></label>
+            </li>
+            <li id="ingredient-7" class="ingredient_container">
+              <select name="basis-7" id="selectBasis-7"></select>
+              <input type="text" name="count-7" placeholder="-" />
+              <select name="unit-7">
+                <option value="0">-</option>
+                <option value="glass">Стакан</option>
+                <option value="ml">мл.</option>
+                <option value="l">л.</option>
+              </select>
+              <label class="switch"
+                ><input type="checkbox" name="decor-7" /><span
+                  class="switch"
+                ></span
+              ></label>
+            </li>
+          </ul>
+        </fieldset>
+        <!--end ingredients-->
+        <fieldset class="container parametrs">
+          <legend class="round">Параметры</legend>
+
+          <label>Количество порций:</label>
+          <select name="portion_count">
+            <option value="1">Одна порция</option>
+            <option value="2">Две порции</option>
+            <option value="3">Три порции</option>
+            <option value="4">Четыре порции</option>
+            <option value="5">Пять порций</option>
+            <option value="6">Шесть порций</option>
+            <option value="7">Семь порций</option>
+            <option value="8">Восемь порций</option>
+            <option value="9">Девять порций</option>
+            <option value="10">Десять порций</option>
+          </select>
+          <label>Время приготовления:</label>
+          <select name="preparing_time">
+            <option value="1">1 минута</option>
+            <option value="2">2 минуты</option>
+            <option value="5">5 минут</option>
+            <option value="10">10 минут</option>
+            <option value="15">15 минут</option>
+            <option value="20">20 минут</option>
+            <option value="25">25 минут</option>
+            <option value="30">30 минут</option>
+          </select>
+
+          <label>Сложность приготовления:</label>
+          <select name="complexity">
+            <option value="low">Лёгкая (1 балл)</option>
+            <option value="low">Лёгкая (2 балла)</option>
+            <option value="low">Лёгкая (3 балла)</option>
+            <option value="middle">Средняя (4 балла)</option>
+            <option value="middle">Средняя (5 баллов)</option>
+            <option value="middle">Средняя (6 баллов)</option>
+            <option value="middle">Средняя (7 баллов)</option>
+            <option value="hard">Сложная (8 баллов)</option>
+            <option value="hard">Сложная (9 баллов)</option>
+            <option value="hard">Сложная (10 баллов)</option>
+          </select>
+
+          <label>Метод приготовления:</label>
+          <select name="method">
+            <option value="glass">В бокале</option>
+            <option value="shaker">В шэйкере</option>
+            <option value="other">Другое</option>
+          </select>
+        </fieldset>
+        <!--end parametrs-->
+      </div>
+      <fieldset class="container photo">
+        <h1>Фотография:</h1>
+        <div class="click_on" tabindex="0">
+          <img
+            src="https://drive.google.com/uc?export=download&id=0BziKaF39HOaEWHhVcHNqVTdCQUU"
+            alt="Пример фото"
+            height="70"
+            id="preview"
+          />
+          <span class="click_here"
+            >Щёлкните, чтобы посмотреть в полном размере</span
+          >
+          <img
+            src="https://drive.google.com/uc?export=download&id=0BziKaF39HOaERHJ6OVNGb1dTZjA"
+            alt="Большое фото"
+            tabindex="0"
+            id="fullImg"
+          />
+        </div>
+        <div class="button">
+          <div class="button_label">Выбрать фото</div>
+          <input type="file" name="select_photo" id="imgInput" />
+        </div>
+        <div class="dotted"></div>
+      </fieldset>
+      <!--end photo-->
+      <fieldset class="properties coctail_type">
+        <legend class="with_angle">Тип коктейля</legend>
+        <h1 class="with_line">По крепости:</h1>
+        <fieldset class="container field_strength" id="field_strength">
+            <div class="line">
+            <label class="switch"
+              ><input type="radio" name="strength" value="non" /><span
+                class="switch"
+              ></span
+              >Безалкогольные</label
+            >
+            <label class="switch"
+              ><input type="radio" name="strength" value="low" /><span
+                class="switch"
+              ></span
+              >Слабоакогольные (6-15%)</label
+            >
+            <label class="switch"
+              ><input type="radio" name="strength" value="middle" /><span
+                class="switch"
+              ></span
+              >Полукрепкие (16-22%)</label
+            >
+            <label class="switch"
+              ><input type="radio" name="strength" value="strong" /><span
+                class="switch"
+              ></span
+              >Крепкие (более 22%)</label
+            >
+          </div>
+        </fieldset>
+        <h1 class="with_line">На основе:</h1>
+        <fieldset id="base_range">
+          <div class="container with_range">
+            <div class="line">
+              <label class="switch"
+                >Абсента<input type="radio" name="base" value="absent" /><span
+                  class="switch"
+                ></span
+              ></label>
+              <label class="switch"
+                >Водки<input type="radio" name="base" value="vodka" /><span
+                  class="switch"
+                ></span
+              ></label>
+              <label class="switch"
+                >Джина<input type="radio" name="base" value="gin" /><span
+                  class="switch"
+                ></span
+              ></label>
+              <label class="switch"
+                >Виски<input type="radio" name="base" value="whisky" /><span
+                  class="switch"
+                ></span
+              ></label>
+              <label class="switch"
+                >Бренди<input type="radio" name="base" value="brandy" /><span
+                  class="switch"
+                ></span
+              ></label>
+              <label class="switch"
+                >Ликера<input type="radio" name="base" value="liquor" /><span
+                  class="switch"
+                ></span
+              ></label>
+              <label class="switch"
+                >Кальвадоса<input
+                  type="radio"
+                  name="base"
+                  value="calvados" /><span class="switch"></span
+              ></label>
+              <label class="switch"
+                >Текилы<input type="radio" name="base" value="tackle" /><span
+                  class="switch"
+                ></span
+              ></label>
+              <label class="switch"
+                >Рома<input type="radio" name="base" value="rum" /><span
+                  class="switch"
+                ></span
+              ></label>
+              <label class="switch"
+                >Пива<input type="radio" name="base" value="beer" /><span
+                  class="switch"
+                ></span
+              ></label>
+              <label class="switch"
+                >Вина<input type="radio" name="base" value="wine" /><span
+                  class="switch"
+                ></span
+              ></label>
+              <label class="switch"
+                >Коньяк<input type="radio" name="base" value="cognac" /><span
+                  class="switch"
+                ></span
+              ></label>
+              <label class="switch"
+                >Чай<input type="radio" name="base" value="tea" /><span
+                  class="switch"
+                ></span
+              ></label>
+              <label class="switch"
+                >Кофе<input type="radio" name="base" value="coffee" /><span
+                  class="switch"
+                ></span
+              ></label>
+              <label class="switch"
+                >Сок<input type="radio" name="base" value="juice" /><span
+                  class="switch"
+                ></span
+              ></label>
+            </div>
+          </div>
+          <div class="range">
+            <div class="arrow left"></div>
+            <div class="arrow right"></div>
+            <input type="range" min="1" max="15" step="1" value="1" />
+          </div>
+          <div class="list"></div>
+          <div class="show_list"><span>Показать списком</span></div>
+        </fieldset>
+        <h1 class="with_line">По типу:</h1>
+        <fieldset id="type_range">
+          <div class="container with_range">
+            <div class="line">
+              <label class="switch"
+                ><input type="radio" name="type" value="aperitif" /><span
+                  class="switch"
+                ></span
+                >Аперитивы</label
+              >
+              <label class="switch"
+                ><input type="radio" name="type" value="digestive" /><span
+                  class="switch"
+                ></span
+                >Диджестивы</label
+              >
+              <label class="switch"
+                ><input type="radio" name="type" value="hot" /><span
+                  class="switch"
+                ></span
+                >Горячие</label
+              >
+              <label class="switch"
+                ><input type="radio" name="type" value="milk" /><span
+                  class="switch"
+                ></span
+                >Молочные</label
+              >
+              <label class="switch"
+                ><input type="radio" name="type" value="dessert" /><span
+                  class="switch"
+                ></span
+                >Десертные</label
+              >
+              <label class="switch"
+                ><input type="radio" name="type" value="layered" /><span
+                  class="switch"
+                ></span
+                >Слоистые</label
+              >
+              <label class="switch"
+                ><input type="radio" name="type" value="daisies" /><span
+                  class="switch"
+                ></span
+                >Дейзи</label
+              >
+              <label class="switch"
+                ><input type="radio" name="type" value="juleps" /><span
+                  class="switch"
+                ></span
+                >Джулепы</label
+              >
+              <label class="switch"
+                ><input type="radio" name="type" value="cardinals" /><span
+                  class="switch"
+                ></span
+                >Кардиналы</label
+              >
+              <label class="switch"
+                ><input type="radio" name="type" value="coblers" /><span
+                  class="switch"
+                ></span
+                >Коблеры</label
+              >
+              <label class="switch"
+                ><input type="radio" name="type" value="collins" /><span
+                  class="switch"
+                ></span
+                >Коллинсы</label
+              >
+              <label class="switch"
+                ><input type="radio" name="type" value="fixes" /><span
+                  class="switch"
+                ></span
+                >Фиксы</label
+              >
+              <label class="switch"
+                ><input type="radio" name="type" value="sours" /><span
+                  class="switch"
+                ></span
+                >Сауэры</label
+              >
+            </div>
+          </div>
+          <div class="range">
+            <div class="arrow left"></div>
+            <div class="arrow right"></div>
+            <input type="range" min="1" max="13" step="1" value="1" />
+          </div>
+          <div class="list"></div>
+          <div class="show_list"><span>Показать списком</span></div>
+        </fieldset>
+      </fieldset>
+      <!--end coctail_type-->
+      <fieldset class="properties tags">
+        <legend class="with_angle">Тэги</legend>
+        <fieldset id="tags_range">
+          <div class="container with_range">
+            <div class="line">
+              <label class="switch"
+                >Бодрящие<input
+                  type="checkbox"
+                  name="tags"
+                  value="bracing" /><span class="switch"></span
+              ></label>
+              <label class="switch"
+                >Горькие<input
+                  type="checkbox"
+                  name="tags"
+                  value="bitter" /><span class="switch"></span
+              ></label>
+              <label class="switch"
+                >Для компании<input
+                  type="checkbox"
+                  name="tags"
+                  value="company" /><span class="switch"></span
+              ></label>
+              <label class="switch"
+                >Кислые<input type="checkbox" name="tags" value="sour" /><span
+                  class="switch"
+                ></span
+              ></label>
+              <label class="switch"
+                >Лонгдринк<input
+                  type="checkbox"
+                  name="tags"
+                  value="longdrink" /><span class="switch"></span
+              ></label>
+              <label class="switch"
+                >Необычные по употреблению<input
+                  type="checkbox"
+                  name="tags"
+                  value="unusual" /><span class="switch"></span
+              ></label>
+              <label class="switch"
+                >Овощные<input
+                  type="checkbox"
+                  name="tags"
+                  value="vegatable" /><span class="switch"></span
+              ></label>
+              <label class="switch"
+                >Огненные<input type="checkbox" name="tags" value="firy" /><span
+                  class="switch"
+                ></span
+              ></label>
+              <label class="switch"
+                >Освежающеие<input
+                  type="checkbox"
+                  name="tags"
+                  value="refreshing" /><span class="switch"></span
+              ></label>
+              <label class="switch"
+                >Сладкий<input type="checkbox" name="tags" value="sweet" /><span
+                  class="switch"
+                ></span
+              ></label>
+            </div>
+          </div>
+          <div class="range">
+            <div class="arrow left"></div>
+            <div class="arrow right"></div>
+            <input type="range" min="1" max="10" step="1" value="1" />
+          </div>
+          <div class="list"></div>
+          <div class="show_list"><span>Показать списком</span></div>
+        </fieldset>
+      </fieldset>
+      <!--end tags-->
+      <fieldset class="properties glasses">
+        <legend class="with_angle">Бокалы</legend>
+        <fieldset id="glasses_range">
+          <div class="container with_range">
+            <div class="line">
+              <label class="switch"
+                ><input type="radio" name="glass" value="white_wine" /><span
+                  class="switch"
+                ></span
+                >Бокал для белого вина</label
+              >
+              <label class="switch"
+                ><input type="radio" name="glass" value="red_wine" /><span
+                  class="switch"
+                ></span
+                >Бокал для красного вина</label
+              >
+              <label class="switch"
+                ><input type="radio" name="glass" value="layered" /><span
+                  class="switch"
+                ></span
+                >Бокал для слоистых коклейтелй</label
+              >
+              <label class="switch"
+                ><input type="radio" name="glass" value="sour" /><span
+                  class="switch"
+                ></span
+                >Бокал сауэр</label
+              >
+              <label class="switch"
+                ><input type="radio" name="glass" value="highrecane" /><span
+                  class="switch"
+                ></span
+                >Бокал хайрикейн</label
+              >
+              <label class="switch"
+                ><input type="radio" name="glass" value="just_grass" /><span
+                  class="switch"
+                ></span
+                >Граненый стакан</label
+              >
+              <label class="switch"
+                ><input type="radio" name="glass" value="little_grass" /><span
+                  class="switch"
+                ></span
+                >Рюмка</label
+              >
+            </div>
+          </div>
+          <div class="range">
+            <div class="arrow left"></div>
+            <div class="arrow right"></div>
+            <input type="range" min="1" max="7" step="1" value="1" />
+          </div>
+          <div class="list"></div>
+          <div class="show_list">
+            <span>Показать списком</span>
+          </div>
+        </fieldset>
+      </fieldset>
+      <!--end coctail_type-->
+      <fieldset class="properties decoration">
+        <legend class="with_angle">Украшения</legend>
+        <fieldset id="decoration_range">
+          <div class="container with_range">
+            <div class="line">
+              <label class="switch"
+                >Апельсин на бокале<input
+                  type="checkbox"
+                  name="decoration"
+                  value="orange" /><span class="switch"></span
+              ></label>
+              <label class="switch"
+                >Веточка мяты<input
+                  type="checkbox"
+                  name="decoration"
+                  value="mint" /><span class="switch"></span
+              ></label>
+              <label class="switch"
+                >Взбитые сливки с вишней<input
+                  type="checkbox"
+                  name="decoration"
+                  value="cream_wqith_cherry" /><span class="switch"></span
+              ></label>
+              <label class="switch"
+                >Виноград на шпажке<input
+                  type="checkbox"
+                  name="decoration"
+                  value="grape" /><span class="switch"></span
+              ></label>
+              <label class="switch"
+                >Вишенка на шпажке<input
+                  type="checkbox"
+                  name="decoration"
+                  value="cherry" /><span class="switch"></span
+              ></label>
+              <label class="switch"
+                >Долька мандарина<input
+                  type="checkbox"
+                  name="decoration"
+                  value="mandarin" /><span class="switch"></span
+              ></label>
+              <label class="switch"
+                >Клубника<input
+                  type="checkbox"
+                  name="decoration"
+                  value="strawberry" /><span class="switch"></span
+              ></label>
+              <label class="switch"
+                >Зонтик<input
+                  type="checkbox"
+                  name="decoration"
+                  value="umbrella" /><span class="switch"></span
+              ></label>
+              <label class="switch"
+                >Трубочка<input
+                  type="checkbox"
+                  name="decoration"
+                  value="straw" /><span class="switch"></span
+              ></label>
+            </div>
+          </div>
+          <div class="range">
+            <div class="arrow left"></div>
+            <div class="arrow right"></div>
+            <input type="range" min="1" max="9" step="1" value="1" />
+          </div>
+          <div class="list"></div>
+          <div class="show_list"><span>Показать списком</span></div>
+        </fieldset>
+      </fieldset>
+      <!--end decoration-->
+      <button type="submit" class="button"><span>Добавить</span></button>
+      <button type="reset" class="button">
+        <span>Начать заново</span>
+      </button>
+    </form>
+  </body>
+</html>
