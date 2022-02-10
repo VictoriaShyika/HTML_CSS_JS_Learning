@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown menu</title>
+    <style>
+        .menu ul {
+            margin: 0;
+            padding-left: 0;
+        }
+        .menu li {
+            list-style: none;
+            z-index: 1;
+        }
+        .menu li:hover + li {
+            z-index: 0;
+        }
+        .menu__list {
+            display: flex;
+        }
+        .menu__list .menu__link, .sub-menu__list {
+            margin-right: 40px;
+            border: 1px solid rgba(0, 0, 0, 0);
+            background-color: #ffffff;
+        }
+        .menu__list .menu__link {
+            display: inline-block;
+            position: relative;
+            margin-bottom: -1px;
+            padding: 5px 7px 5px 7px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            text-decoration: underline;
+            color: #0000cc;
+        }
+        .menu__list > li:hover .menu__link::after {
+            display: block;
+            position: absolute;
+            content: '';
+            top: -1px;
+            right: -1px;
+            bottom: 0;
+            left: -1px;
+            box-shadow: 0 0 7px grey;
+            z-index: -1;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        .menu__list > li:hover .sub-menu__list {
+            display: block;
+            position: absolute;
+            z-index: -1;
+        }
+        .menu__list > li:hover .menu__link {
+            color: black;
+            text-decoration: none;
+        }
+        .sub-menu__list {
+            display: none;
+            min-width: 135px;
+            box-shadow: 0 0 7px grey;
+        }
+
+        .sub-menu__list > li {
+            padding: 2px;
+            background-color: #fff;
+        }
+        .sub-menu__link {
+            display: inline-block;
+            width: 100%;
+            padding: 5px;
+            text-decoration: none;
+            color: #0000cc;
+        }
+
+        .sub-menu__link:hover {
+            color: white;
+            box-sizing: border-box;
+            background-color: #37aafd;
+        }
+
+    </style>
+  </head>
+  <body>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li>
+          <span class="menu__link">Файл</span>
+          <ul class="sub-menu__list">
+            <li>
+              <a href="#" class="sub-menu__link">Новый</a>
+            </li>
+            <li>
+              <a href="#" class="sub-menu__link">Открыть</a>
+            </li>
+            <li>
+              <a href="#" class="sub-menu__link">Сохранить</a>
+            </li>
+            <li>
+              <a href="#" class="sub-menu__link">Закрыть</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="menu__link">Правка</span>
+          <ul class="sub-menu__list">
+            <li>
+              <a href="#" class="sub-menu__link">Вырезать</a>
+            </li>
+            <li>
+              <a href="#" class="sub-menu__link">Копировать</a>
+            </li>
+            <li>
+              <a href="#" class="sub-menu__link">Вставить</a>
+            </li>
+            <li>
+              <a href="#" class="sub-menu__link">Удалить</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
