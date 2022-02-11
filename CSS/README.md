@@ -1,4 +1,4 @@
-This repository is my CSS study notes
+This directory is my CSS study notes
 ---
 - [CSS Basics](https://github.com/VictoriaShyika/html-css-js-learning/blob/main/CSS/Basics.md#css-basics)
 - [CSS layout](https://github.com/VictoriaShyika/html-css-js-learning/blob/main/CSS/Layouts.md#css-layout)
