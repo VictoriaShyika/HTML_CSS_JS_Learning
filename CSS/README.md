@@ -1,2 +1,2 @@
-This repository is my HTML study notes
+This repository is my CSS study notes
 --------------------------------------
