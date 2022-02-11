@@ -1,5 +1,21 @@
 CSS layout
 ===
+### Content  
+
+- [Box model](https://github.com/VictoriaShyika/html-css-js-learning/blob/main/CSS/Layouts.md#box-model)
+
+- [Normal flow](https://github.com/VictoriaShyika/html-css-js-learning/blob/main/CSS/Layouts.md#normal-flow)
+
+- [Свойство Floats](https://github.com/VictoriaShyika/html-css-js-learning/blob/main/CSS/Layouts.md#свойство-floats)
+
+- [Свойство position](https://github.com/VictoriaShyika/html-css-js-learning/blob/main/CSS/Layouts.md#свойство-position)
+
+- [Свойство display](https://github.com/VictoriaShyika/html-css-js-learning/blob/main/CSS/Layouts.md#свойство-display)
+
+- [Flexbox](https://github.com/VictoriaShyika/html-css-js-learning/blob/main/CSS/Layouts.md#flexbox)
+
+- [Grid Layout](https://github.com/VictoriaShyika/html-css-js-learning/blob/main/CSS/Layouts.md#grid-layout)
+
 Box model
 ---
 В CSS имеем два типа элементов — **блочные** и **строчные**.
