@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numbering</title>
+    <style>
+      div {
+        background-color: rgba(220, 220, 220, 0.6);
+        border-bottom: 4px solid rgba(200, 200, 200, 1);
+        height: 30px;
+      }
+
+      a {
+        color: rgba(255, 80, 80, 0.8);
+        text-decoration: none;
+      }
+
+      li {
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        display: inline-block;
+      }
+
+      li:hover {
+        background-color: rgba(200, 200, 200, 0.8);
+        border-bottom: 4px solid rgba(130, 130, 130, 1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="item-list">
+      <ul type="none" class="pager">
+        <li class="pager-current first"><span>1</span></li>
+        <li class="pager-item">
+          <a href="#" title="На страницу номер 2">2</a>
+        </li>
+        <li class="pager-item">
+          <a href="#" title="На страницу номер 3">3</a>
+        </li>
+        <li class="pager-item">
+          <a href="#" title="На страницу номер 4">4</a>
+        </li>
+        <li class="pager-next last">
+          <a href="#" title="На следующую страницу">›</a>
+        </li>
+      </ul>
+    </div>
+    <p>Содержание</p>
+  </body>
+</html>

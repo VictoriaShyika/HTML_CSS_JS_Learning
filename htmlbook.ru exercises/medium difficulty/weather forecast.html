@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather forecast</title>
+    <style>
+      .card {
+        display: inline-block;
+        font-family: serif;
+        text-align: center;
+        width: 134px;
+        height: 180px;
+      }
+
+      .card:hover {
+        box-shadow: 0 0 7px black;
+      }
+
+      .date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        background-color: #0097b9;
+        color: white;
+      }
+
+      .icon {
+        width: 114px;
+        height: 94px;
+        background-color: AliceBlue;
+        margin: 0 auto 19px;
+      }
+
+      .sun {
+        background: center url(./images/sun.jpg) no-repeat;
+      }
+
+      .snow {
+        background: center url(./images/snow.jpg) no-repeat;
+      }
+
+      .bizzard {
+        background: center url(./images/bizzard.jpg) no-repeat;
+      }
+
+      .temperature {
+        font-size: 21px;
+      }
+
+      .temperature::after {
+        content: "°";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <span class="date">31.08</span>
+      <div class="icon sun"></div>
+      <span class="temperature">+20</span>
+    </div>
+    <div class="card">
+      <span class="date">01.09</span>
+      <div class="icon snow"></div>
+      <span class="temperature">-3</span>
+    </div>
+    <div class="card">
+      <span class="date">02.09</span>
+      <div class="icon bizzard"></div>
+      <span class="temperature">-10</span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icons for scrolling photos</title>
+    <style>
+      .content {
+        margin: auto;
+        width: 600px;
+        height: 380px;
+        background-image: url(./images/image1.jpg);
+        background-repeat: no-repeat;
+      }
+
+      input {
+        display: none;
+      }
+      label {
+        margin: 0;
+        padding: 0;
+        float: left;
+        margin-right: 6px;
+        cursor: pointer;
+        width: 10px;
+        height: 10px;
+        background: black;
+        border-radius: 10px;
+        border: 1px solid white;
+        position: relative;
+        left: 50%;
+        top: 354px;
+        transform: translateX(-50%);
+      }
+
+      #radio1:checked ~ .label1,
+      #radio2:checked ~ .label2,
+      #radio3:checked ~ .label3,
+      #radio4:checked ~ .label4,
+      #radio5:checked ~ .label5 {
+        background: red;
+        box-shadow: 0 0 10px 3px white;
+        -webkit-box-shadow: 0 0 10px 3px white;
+        -moz-box-shadow: 0 0 10px 3px white;
+      }
+      #radio1:checked ~ .content {
+        background-image: url(./images/image1.jpg);
+      }
+      #radio2:checked ~ .content {
+        background-image: url(./images/image2.jpg);
+      }
+      #radio3:checked ~ .content {
+        background-image: url(./images/image3.jpg);
+      }
+      #radio4:checked ~ .content {
+        background-image: url(./images/image4.jpg);
+      }
+      #radio5:checked ~ .content {
+        background-image: url(./images/image5.jpg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <input type="radio" name="rad" id="radio1" checked />
+      <input type="radio" name="rad" id="radio2" />
+      <input type="radio" name="rad" id="radio3" />
+      <input type="radio" name="rad" id="radio4" />
+      <input type="radio" name="rad" id="radio5" />
+
+      <label for="radio1" class="label1"></label>
+      <label for="radio2" class="label2"></label>
+      <label for="radio3" class="label3"></label>
+      <label for="radio4" class="label4"></label>
+      <label for="radio5" class="label5"></label>
+
+      <div class="content"></div>
+    </div>
+  </body>
+</html>

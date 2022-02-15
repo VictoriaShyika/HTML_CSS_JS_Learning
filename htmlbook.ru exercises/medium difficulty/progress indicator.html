@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress indicator</title>
+    <style>
+      .box {
+        width: 100%;
+        height: 20px;
+        border: 1px solid #333;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        background: linear-gradient(to bottom, #333, #999);
+      }
+
+      .box::after {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 30%;
+        background: #5bc1fe;
+        background: linear-gradient(to bottom, #5bc1fe, #018ef2 50%, #57befd);
+        border: 1px solid #008df2;
+        box-shadow: 3px 0 3px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
