@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вырезанные уголки</title>
+    <style>
+        .box{
+            margin: auto;
+            width: 250px;
+            height: 50px;
+            background-color: green;
+            position: relative;
+        }
+        p {
+            color: white;
+            padding-top: 15px;
+            padding-left: 20px;
+        }
+        .box::before, .box::after {
+            content: '';
+            position: absolute;
+        }
+        .box::after{
+            width: 5px;
+            height: 40px;
+            background: green;
+            left: 250px;
+            bottom: 5px;
+        }
+        .box::before{
+            width: 5px;
+            height: 40px;
+            background: green;
+            left: -5px;
+            top: 5px;
+
+
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box"><p>Содержимое</p></div>
+  </body>
+</html>

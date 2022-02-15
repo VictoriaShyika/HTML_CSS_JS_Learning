@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery</title>
+    <style>
+        .block {
+            width: 160px;
+            height: 50px;
+            border: 4px solid black;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .block::after, .block::before {
+            position: absolute;
+            content: '';
+        }
+
+        .block::after {
+            width: 10px;
+            height: 20px;
+            background: black;
+            right: -10px;
+            top: 15px;
+        }
+
+        .block::before {
+            height: 100%;
+        }
+
+        .red::before {
+            width: 25%;
+            background: red;
+        }
+        .yellow::before {
+            width: 50%;
+            background: yellow;
+        }
+        .green::before {
+            width: 100%;
+            background: green;
+        }
+
+
+    </style>
+</head>
+<body>
+
+        <div class="block red"></div>
+        <div class="block yellow"></div>
+        <div class="block green"></div>
+    
+</body>
+</html>
