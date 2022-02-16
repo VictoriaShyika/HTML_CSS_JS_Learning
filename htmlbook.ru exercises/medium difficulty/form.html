@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Флажки</title>
+    <style>
+      input[type="checkbox"]:checked + span {
+        background: #fc0;
+      }
+      span {
+        padding: 0 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <p>
+        <label
+          ><input type="checkbox" name="sortament" value="1" />
+          <span>Балка рукояти</span></label
+        >
+      </p>
+      <p>
+        <label
+          ><input type="checkbox" name="sortament" value="2" />
+          <span>Шестерня</span></label
+        >
+      </p>
+      <p>
+        <label
+          ><input type="checkbox" name="sortament" value="3" />
+          <span>Вал</span></label
+        >
+      </p>
+      <p>
+        <label
+          ><input type="checkbox" name="sortament" value="4" />
+          <span>Пимпочка</span></label
+        >
+      </p>
+      <p><input type="submit" value="Отправить" /></p>
+    </form>
+  </body>
+</html>
