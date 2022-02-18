@@ -5,4 +5,4 @@ Bouncing balls
 
 Open index.html in browser.
 
-*You can change \<script src="main.js"></script> to \<script src="main(1).js"></script>  in index.html and your pogram will be without the Evil Circle.*
+You can change *\<script src="main.js"></script>* to *\<script src="main(1).js"></script>*  in index.html and your pogram will be without the Evil Circle.*
