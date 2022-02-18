@@ -195,4 +195,4 @@ FakesAssemblies/
 # Visual Studio 6 workspace options file
 *.opt
 
-.ds_store
+.DS_Store
