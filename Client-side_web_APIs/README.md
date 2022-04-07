@@ -6,4 +6,6 @@ running on, or manipulating data from other web sites or services.
 * [Manipulating documents](https://github.com/VictoriaShyika/HTML_CSS_JS_Learning/tree/main/Client-side_web_APIs/Manipulating-documents)
 * [Fetching data](https://github.com/VictoriaShyika/HTML_CSS_JS_Learning/tree/main/Client-side_web_APIs/Fetching-data)
 * [Third party apis](https://github.com/VictoriaShyika/HTML_CSS_JS_Learning/tree/main/Client-side_web_APIs/Third-party-apis)
-+        [Google Map API](https://github.com/VictoriaShyika/HTML_CSS_JS_Learning/tree/main/Client-side_web_APIs/Third-party-apis/google%20-map_API)
++ [Google Map API](https://github.com/VictoriaShyika/HTML_CSS_JS_Learning/tree/main/Client-side_web_APIs/Third-party-apis/google%20-map_API)
++ [NYTimes](https://github.com/VictoriaShyika/HTML_CSS_JS_Learning/tree/main/Client-side_web_APIs/Third-party-apis/nytimes)
+* [Drawing Graphics](https://github.com/VictoriaShyika/HTML_CSS_JS_Learning/tree/main/Client-side_web_APIs/drawing-graphics/canvas)
