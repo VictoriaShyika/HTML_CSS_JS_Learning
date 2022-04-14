@@ -22,9 +22,9 @@ const anya = {
   age: 24,
 };
 
-fnAnyaInfoLog = person.logInfo.bind(anya, "Frontend", "099-888-77-66")();
-// fnAnyaInfoLog = person.logInfo.call(anya, "Frontend", "099-888-77-66");
-// fnAnyaInfoLog = person.logInfo.apply(anya, ["Frontend", "099-888-77-66"]);
+person.logInfo.bind(anya, "Frontend", "099-888-77-66")();
+// person.logInfo.call(anya, "Frontend", "099-888-77-66");
+// person.logInfo.apply(anya, ["Frontend", "099-888-77-66"]);
 
 
 // ===============
